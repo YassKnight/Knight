@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="bb_tabXmlResource" format="reference" />
+    <attr name="bb_behavior">
+        <flag name="shifting" value="1" />
+        <flag name="shy" value="2" />
+        <flag name="underNavbar" value="4" />
+        <flag name="iconsOnly" value="8" />
+    </attr>
+    <attr name="bb_titleTextAppearance" format="reference" />
+    <attr name="bb_titleTypeFace" format="string" />
+</resources>

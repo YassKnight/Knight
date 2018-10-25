@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        icon="@drawable/ic_roadbook"
+        id="@+id/tab_recents"
+        title="路书" />
+    <tab
+        icon="@drawable/ic_weather"
+        id="@+id/tab_favorites"
+        title="天气" />
+    <tab
+        icon="@drawable/ic_directions_bike"
+        id="@+id/tab_nearby"
+        title="骑行" />
+    <tab
+        icon="@drawable/ic_shopping"
+        id="@+id/tab_friends"
+        title="商城" />
+    <tab
+        icon="@drawable/ic_person"
+        id="@+id/tab_food"
+        title="我的" />
+</tabs>
