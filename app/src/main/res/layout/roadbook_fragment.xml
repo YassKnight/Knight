@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/text_tuijian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:text="推荐"/>
+                    <TextView
+                        android:id="@+id/text_wode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/bb_darkBackgroundColor"
+                        android:textStyle="bold"
+                        android:text="我的"/>
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/img_add"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@mipmap/ic_menu_add" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#3333"/>
+
+            <LinearLayout
+                android:id="@+id/lin_meanu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/rel_sousuo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0">
+
+                    <ImageView
+                        android:id="@+id/img_sousuo"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/ic_lushu_search" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_below="@+id/img_sousuo"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1dp"
+                        android:text="搜索路书"
+                        android:textColor="@color/bb_darkBackgroundColor"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_saiduan"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0">
+
+                    <ImageView
+                        android:id="@+id/img_saidun"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/ic_lushu_segment" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_saidun"
+                        android:layout_centerHorizontal="true"
+                        android:text="赛段"
+                        android:textColor="@color/bb_darkBackgroundColor"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_fujing"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0">
+
+                    <ImageView
+                        android:id="@+id/img_fujin"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/ic_lushu_nearby" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_fujin"
+                        android:layout_centerHorizontal="true"
+                        android:text="附近路书"
+                        android:textColor="@color/bb_darkBackgroundColor"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!--下拉刷新-->
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipe_refresh_noitem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/lin_noitem"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/background_pattern"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="暂无数据"/>
+            </LinearLayout>
+            </android.support.v4.widget.SwipeRefreshLayout>
+            <!--下拉刷新-->
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipe_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ListView
+                    android:id="@+id/list_tuijian"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/colorWhite"
+                    android:dividerHeight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="5dp">
+                </ListView>
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+        </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -4,4 +4,13 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="tab_roadbook">路书</string>
+    <string name="tab_weather">天气</string>
+    <string name="tab_bike">骑行</string>
+    <string name="tab_shopping">商城</string>
+    <string name="tab_person">我的</string>
+    <string name="tab_person_title">我的</string>
+    <string name="sdk_name">Baidu Navigation SDK Demo</string>
+    <string name="title_route_guide_demo">1. GPS导航(RouteGuideDemo)</string>
+    <string name="shopping_name">商城</string>
 </resources>

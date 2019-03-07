@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <tabs>
     <tab
-        icon="@drawable/ic_roadbook"
-        id="@+id/tab_recents"
-        title="路书" />
+        icon="@drawable/ic_person"
+        id="@+id/tab_person"
+        title="@string/tab_person" />
     <tab
-        icon="@drawable/ic_weather"
-        id="@+id/tab_favorites"
-        title="天气" />
+        icon="@drawable/ic_roadbook"
+        id="@+id/tab_roadbook"
+        title="@string/tab_roadbook" />
     <tab
         icon="@drawable/ic_directions_bike"
-        id="@+id/tab_nearby"
-        title="骑行" />
+        id="@+id/tab_bike"
+        title="@string/tab_bike" />
     <tab
         icon="@drawable/ic_shopping"
-        id="@+id/tab_friends"
-        title="商城" />
+        id="@+id/tab_shopping"
+        title="@string/tab_shopping" />
     <tab
-        icon="@drawable/ic_person"
-        id="@+id/tab_food"
-        title="我的" />
+        icon="@drawable/ic_weather"
+        id="@+id/tab_weather"
+        title="@string/tab_weather" />
 </tabs>

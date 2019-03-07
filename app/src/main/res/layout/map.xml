@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/slideview"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:theme="@style/NoTitleTheme">
+
 
     <com.baidu.mapapi.map.MapView
         android:id="@+id/bmapView"
@@ -9,4 +14,16 @@
         android:layout_height="match_parent"
         android:clickable="true" />
 
-</android.support.constraint.ConstraintLayout>
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/floating_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_floating_button"
+        app:fab_colorNormal="@android:color/white"
+        app:fab_progress_color="@color/colorPrimary" />
+
+</FrameLayout>

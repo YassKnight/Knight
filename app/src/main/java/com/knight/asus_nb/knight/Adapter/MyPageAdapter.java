@@ -15,7 +15,6 @@ public class MyPageAdapter extends PagerAdapter {
     @Override
     public int getCount() {
         return viewList.size();
-
     }
 
     @Override

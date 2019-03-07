@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="#EBEBEB"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#fff">
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:onClick="DoBack">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/action_bar_back_dark" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="添加路线集合"
+                android:textColor="#000"
+                android:textSize="20dp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="1dp"
+            android:layout_height="60dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:text="名称"/>
+
+            <EditText
+                android:id="@+id/edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_edit_noback"
+                android:hint="请输入名称" />
+        </LinearLayout>
+        <RelativeLayout
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="200dp">
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:text="描述"/>
+
+            <EditText
+                android:id="@+id/edit_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/text_title"
+                android:background="@drawable/ic_edit_noback"
+                android:hint="请输入描述"
+                android:lineHeight="25dp"
+                android:minHeight="60dp" />
+        </RelativeLayout>
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:visibility="gone"
+            android:id="@+id/img_show"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:scaleType="fitXY"
+            app:riv_corner_radius="10dp"
+            android:src="@mipmap/ic_fengjing"/>
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/img_add"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:scaleType="fitXY"
+            app:riv_corner_radius="10dp"
+            android:src="@mipmap/add_icon_gray"/>
+        <Button
+            android:id="@+id/btn_confirm"
+            style="@style/BlueBtnStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="完成" />
+    </LinearLayout>
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

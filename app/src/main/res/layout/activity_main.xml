@@ -6,25 +6,25 @@
     android:orientation="vertical">
 
 
-    <include layout="@layout/homepage_title"></include>
-
-
-    <android.support.v4.view.ViewPager
-        android:id="@+id/viewpager"
+    <!--中间内容部分-->
+    <FrameLayout
+        android:id="@+id/frafment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
 
-    </android.support.v4.view.ViewPager>
+    </FrameLayout>
 
+
+    <!--底部导航栏-->
     <com.roughike.bottombar.BottomBar
         android:id="@+id/bottom_bar"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
-        app:bb_tabXmlResource="@xml/bottombar_tabs"
-        app:bb_behavior="shifting">
+        app:bb_tabXmlResource="@xml/bottombar_tabs">
 
     </com.roughike.bottombar.BottomBar>
+
 
 </LinearLayout>

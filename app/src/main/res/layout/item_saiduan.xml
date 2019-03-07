@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/item_img_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_fengjing"
+            app:riv_border_color="#333333"
+            app:riv_corner_radius="10dp"/>
+        <TextView
+            android:id="@+id/item_text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="集合名称"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

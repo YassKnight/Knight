@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="Knight_DB"/>
+    <version value="5"></version>
+    <list>
+        <mapping class="com.knight.asus_nb.knight.db.Province"></mapping>
+        <mapping class="com.knight.asus_nb.knight.db.City"></mapping>
+        <mapping class="com.knight.asus_nb.knight.db.County"></mapping>
+        <mapping class="com.knight.asus_nb.knight.db.Comment"></mapping>
+        <mapping class="com.knight.asus_nb.knight.db.RoadLine"></mapping>
+        <mapping class="com.knight.asus_nb.knight.db.RoadLineList"></mapping>
+        <mapping class="com.knight.asus_nb.knight.db.User"></mapping>
+        <mapping class="com.knight.asus_nb.knight.db.SportHistory"></mapping>
+        <mapping class="com.knight.asus_nb.knight.db.LineHistory"></mapping>
+    </list>
+</litepal>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#EBEBEB"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"  >
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/edit_index"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/ic_edit_back"
+                android:hint="名称、编号、创建人搜索"
+                android:paddingLeft="20dp" />
+
+            <TextView
+                android:id="@+id/text_confirm"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="#000"
+                android:textSize="15dp" />
+        </LinearLayout>
+        <RelativeLayout
+            android:background="@color/colorWhite"
+            android:id="@+id/rel_selqi"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <ImageView
+                android:id="@+id/img_daohang"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/location_city" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/img_daohang"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="起终点"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="根据起终点名称搜索路书" />
+            </LinearLayout>
+        </RelativeLayout>
+        <!--下拉刷新-->
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:visibility="gone"
+            android:id="@+id/swipe_refresh_noitem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/lin_noitem"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/background_pattern"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="暂无数据"/>
+            </LinearLayout>
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:id="@+id/list_fujinglushu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:divider="#EBEBEB"
+                android:dividerHeight="15dp"></ListView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

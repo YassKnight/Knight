@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false"
+    android:scrollbars="none">
+
+
+  <!--  //商城标题
+    <include layout="@layout/shopping_title"></include>-->
+
+
+    <!--    &lt;!&ndash;图片播放&ndash;&gt;
+        <com.bigkoo.convenientbanner.ConvenientBanner xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/convenientBanner"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:autoTurningTime="3000"
+            app:canLoop="true" />-->
+
+
+    <!--   &lt;!&ndash;周边商品瀑布流&ndash;&gt;
+
+       <android.support.v7.widget.RecyclerView
+           android:id="@+id/commodity_recyclerView"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+       </android.support.v7.widget.RecyclerView>-->
+
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+
+
+</android.support.design.widget.CoordinatorLayout>
+
